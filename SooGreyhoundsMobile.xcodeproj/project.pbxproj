@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		04EDF3B823DA01F40062E9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */; };
-		04EDF3BA23DA01F40062E9E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3B923DA01F40062E9E2 /* ViewController.swift */; };
 		04EDF3BD23DA01F40062E9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EDF3BB23DA01F40062E9E2 /* Main.storyboard */; };
 		04EDF3BF23DA01F50062E9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EDF3BE23DA01F50062E9E2 /* Assets.xcassets */; };
 		04EDF3C223DA01F50062E9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EDF3C023DA01F50062E9E2 /* LaunchScreen.storyboard */; };
 		04EDF3CD23DA01F50062E9E2 /* SooGreyhoundsMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3CC23DA01F50062E9E2 /* SooGreyhoundsMobileTests.swift */; };
 		04EDF3D823DA01F50062E9E2 /* SooGreyhoundsMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3D723DA01F50062E9E2 /* SooGreyhoundsMobileUITests.swift */; };
+		04EDF3E623DA03B40062E9E2 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */; };
+		04EDF3E823DA06B10062E9E2 /* SooGreyhoundsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3E723DA06B10062E9E2 /* SooGreyhoundsAPI.swift */; };
+		04EDF3EA23DA086E0062E9E2 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3E923DA086E0062E9E2 /* PhotoStore.swift */; };
+		04EDF3EC23DA0A040062E9E2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3EB23DA0A040062E9E2 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		04EDF3B423DA01F40062E9E2 /* SooGreyhoundsMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SooGreyhoundsMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04EDF3B923DA01F40062E9E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04EDF3BC23DA01F40062E9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04EDF3BE23DA01F50062E9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04EDF3C123DA01F50062E9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		04EDF3D323DA01F50062E9E2 /* SooGreyhoundsMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SooGreyhoundsMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EDF3D723DA01F50062E9E2 /* SooGreyhoundsMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsMobileUITests.swift; sourceTree = "<group>"; };
 		04EDF3D923DA01F50062E9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		04EDF3E723DA06B10062E9E2 /* SooGreyhoundsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsAPI.swift; sourceTree = "<group>"; };
+		04EDF3E923DA086E0062E9E2 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		04EDF3EB23DA0A040062E9E2 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		04EDF3B623DA01F40062E9E2 /* SooGreyhoundsMobile */ = {
 			isa = PBXGroup;
 			children = (
+				04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */,
+				04EDF3EB23DA0A040062E9E2 /* Photo.swift */,
 				04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */,
-				04EDF3B923DA01F40062E9E2 /* ViewController.swift */,
 				04EDF3BB23DA01F40062E9E2 /* Main.storyboard */,
+				04EDF3E723DA06B10062E9E2 /* SooGreyhoundsAPI.swift */,
+				04EDF3E923DA086E0062E9E2 /* PhotoStore.swift */,
 				04EDF3BE23DA01F50062E9E2 /* Assets.xcassets */,
 				04EDF3C023DA01F50062E9E2 /* LaunchScreen.storyboard */,
 				04EDF3C323DA01F50062E9E2 /* Info.plist */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04EDF3BA23DA01F40062E9E2 /* ViewController.swift in Sources */,
+				04EDF3E823DA06B10062E9E2 /* SooGreyhoundsAPI.swift in Sources */,
+				04EDF3E623DA03B40062E9E2 /* PhotosViewController.swift in Sources */,
+				04EDF3EA23DA086E0062E9E2 /* PhotoStore.swift in Sources */,
 				04EDF3B823DA01F40062E9E2 /* AppDelegate.swift in Sources */,
+				04EDF3EC23DA0A040062E9E2 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
