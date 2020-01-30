@@ -18,27 +18,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E6Q-J9-30b">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IIn-WQ-dI7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="KEf-SI-8zW">
+                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="7Sg-3d-1ch" customClass="PhotoCollectionViewCell" customModule="SooGreyhoundsMobile" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="2" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DMM-56-0W6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="6Rb-4f-2Z1">
+                                                    <rect key="frame" x="35" y="35" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DMM-56-0W6" firstAttribute="leading" secondItem="7Sg-3d-1ch" secondAttribute="leading" id="Kng-z8-C9v"/>
+                                            <constraint firstAttribute="bottom" secondItem="DMM-56-0W6" secondAttribute="bottom" id="Qe3-oc-7dq"/>
+                                            <constraint firstItem="6Rb-4f-2Z1" firstAttribute="centerX" secondItem="7Sg-3d-1ch" secondAttribute="centerX" id="STU-pO-sia"/>
+                                            <constraint firstItem="DMM-56-0W6" firstAttribute="top" secondItem="7Sg-3d-1ch" secondAttribute="top" id="dkC-gl-2a0"/>
+                                            <constraint firstItem="6Rb-4f-2Z1" firstAttribute="centerY" secondItem="7Sg-3d-1ch" secondAttribute="centerY" id="oqE-qm-QFB"/>
+                                            <constraint firstAttribute="trailing" secondItem="DMM-56-0W6" secondAttribute="trailing" id="vii-hx-FbQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="DMM-56-0W6" id="Jdk-lq-tbX"/>
+                                            <outlet property="spinner" destination="6Rb-4f-2Z1" id="C12-EQ-rV4"/>
+                                            <segue destination="Fbf-Dd-56L" kind="show" identifier="showPhoto" id="E3I-Bj-7XD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="E6Q-J9-30b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XrJ-68-Fkm"/>
-                            <constraint firstItem="E6Q-J9-30b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aWb-aY-hb3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E6Q-J9-30b" secondAttribute="bottom" id="dzX-Rb-n5R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6Q-J9-30b" secondAttribute="trailing" id="hlP-Lv-DFm"/>
+                            <constraint firstItem="IIn-WQ-dI7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Du9-sq-xvI"/>
+                            <constraint firstItem="IIn-WQ-dI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sk9-AG-0gS"/>
+                            <constraint firstItem="IIn-WQ-dI7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W0B-1M-rRe"/>
+                            <constraint firstItem="IIn-WQ-dI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z9p-WG-MnK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="oa6-hu-eli"/>
                     <connections>
-                        <outlet property="imageView" destination="E6Q-J9-30b" id="D8S-G2-KtV"/>
+                        <outlet property="collectionView" destination="IIn-WQ-dI7" id="ywD-7w-Pih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="78"/>
+        </scene>
+        <!--Photo Info View Controller-->
+        <scene sceneID="jhX-9P-Tlh">
+            <objects>
+                <viewController id="Fbf-Dd-56L" customClass="PhotoInfoViewController" customModule="SooGreyhoundsMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pxw-2N-A6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uno-5s-W0p">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uno-5s-W0p" firstAttribute="top" secondItem="Qyk-0z-sQZ" secondAttribute="top" id="6Nj-PF-xwv"/>
+                            <constraint firstItem="Qyk-0z-sQZ" firstAttribute="trailing" secondItem="Uno-5s-W0p" secondAttribute="trailing" id="71f-zn-fjw"/>
+                            <constraint firstItem="Qyk-0z-sQZ" firstAttribute="bottom" secondItem="Uno-5s-W0p" secondAttribute="bottom" id="Ch3-8S-9zk"/>
+                            <constraint firstItem="Uno-5s-W0p" firstAttribute="leading" secondItem="Qyk-0z-sQZ" secondAttribute="leading" id="Gi9-Rv-wWN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qyk-0z-sQZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Uno-5s-W0p" id="Tp2-9C-XEF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7G7-1l-hKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.8" y="42.728635682158924"/>
         </scene>
         <!--Soo Greyhounds-->
         <scene sceneID="dtH-mB-rcF">

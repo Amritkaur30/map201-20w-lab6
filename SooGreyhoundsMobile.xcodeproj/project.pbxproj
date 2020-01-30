@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D64D6923E3379900A9F756 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6823E3379900A9F756 /* PhotoDataSource.swift */; };
+		04D64D6B23E339CA00A9F756 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */; };
+		04D64D6D23E3414D00A9F756 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6C23E3414D00A9F756 /* ImageStore.swift */; };
+		04D64D6F23E3423D00A9F756 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6E23E3423D00A9F756 /* PhotoInfoViewController.swift */; };
 		04EDF3B823DA01F40062E9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */; };
 		04EDF3BD23DA01F40062E9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EDF3BB23DA01F40062E9E2 /* Main.storyboard */; };
 		04EDF3BF23DA01F50062E9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EDF3BE23DA01F50062E9E2 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D64D6823E3379900A9F756 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		04D64D6C23E3414D00A9F756 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		04D64D6E23E3423D00A9F756 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		04EDF3B423DA01F40062E9E2 /* SooGreyhoundsMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SooGreyhoundsMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EDF3BC23DA01F40062E9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,10 +113,14 @@
 			children = (
 				04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */,
 				04EDF3EB23DA0A040062E9E2 /* Photo.swift */,
+				04D64D6C23E3414D00A9F756 /* ImageStore.swift */,
 				04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */,
 				04EDF3BB23DA01F40062E9E2 /* Main.storyboard */,
+				04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */,
+				04D64D6823E3379900A9F756 /* PhotoDataSource.swift */,
 				04EDF3E723DA06B10062E9E2 /* SooGreyhoundsAPI.swift */,
 				04EDF3E923DA086E0062E9E2 /* PhotoStore.swift */,
+				04D64D6E23E3423D00A9F756 /* PhotoInfoViewController.swift */,
 				04EDF3BE23DA01F50062E9E2 /* Assets.xcassets */,
 				04EDF3C023DA01F50062E9E2 /* LaunchScreen.storyboard */,
 				04EDF3C323DA01F50062E9E2 /* Info.plist */,
@@ -268,8 +280,12 @@
 				04EDF3E823DA06B10062E9E2 /* SooGreyhoundsAPI.swift in Sources */,
 				04EDF3E623DA03B40062E9E2 /* PhotosViewController.swift in Sources */,
 				04EDF3EA23DA086E0062E9E2 /* PhotoStore.swift in Sources */,
+				04D64D6D23E3414D00A9F756 /* ImageStore.swift in Sources */,
+				04D64D6923E3379900A9F756 /* PhotoDataSource.swift in Sources */,
+				04D64D6B23E339CA00A9F756 /* PhotoCollectionViewCell.swift in Sources */,
 				04EDF3B823DA01F40062E9E2 /* AppDelegate.swift in Sources */,
 				04EDF3EC23DA0A040062E9E2 /* Photo.swift in Sources */,
+				04D64D6F23E3423D00A9F756 /* PhotoInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
