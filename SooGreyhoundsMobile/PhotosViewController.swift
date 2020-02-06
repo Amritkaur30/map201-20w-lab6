@@ -26,9 +26,8 @@ class PhotosViewController: UIViewController,UICollectionViewDelegate {
                 print("Error fetching latest photos: \(error)")
                 self.photoDataSource.photos.removeAll()
             }
-            OperationQueue.main.addOperation {
-                self.collectionView.reloadSections(IndexSet(integer: 0))
-            }
+
+            self.collectionView.reloadSections(IndexSet(integer: 0))
             
         }
     }
