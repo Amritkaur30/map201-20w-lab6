@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A2DB7123EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB6F23EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld */; };
+		04A2DB7423EC7DE1009E7CDD /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7223EC7DE1009E7CDD /* Photo+CoreDataClass.swift */; };
+		04A2DB7523EC7DE1009E7CDD /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7323EC7DE1009E7CDD /* Photo+CoreDataProperties.swift */; };
 		04D64D6923E3379900A9F756 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6823E3379900A9F756 /* PhotoDataSource.swift */; };
 		04D64D6B23E339CA00A9F756 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */; };
 		04D64D6D23E3414D00A9F756 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6C23E3414D00A9F756 /* ImageStore.swift */; };
@@ -20,7 +23,6 @@
 		04EDF3E623DA03B40062E9E2 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */; };
 		04EDF3E823DA06B10062E9E2 /* SooGreyhoundsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3E723DA06B10062E9E2 /* SooGreyhoundsAPI.swift */; };
 		04EDF3EA23DA086E0062E9E2 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3E923DA086E0062E9E2 /* PhotoStore.swift */; };
-		04EDF3EC23DA0A040062E9E2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDF3EB23DA0A040062E9E2 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A2DB7023EC79E0009E7CDD /* SooGreyhounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SooGreyhounds.xcdatamodel; sourceTree = "<group>"; };
+		04A2DB7223EC7DE1009E7CDD /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04A2DB7323EC7DE1009E7CDD /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04D64D6823E3379900A9F756 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D64D6C23E3414D00A9F756 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		04EDF3E723DA06B10062E9E2 /* SooGreyhoundsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsAPI.swift; sourceTree = "<group>"; };
 		04EDF3E923DA086E0062E9E2 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
-		04EDF3EB23DA0A040062E9E2 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +115,9 @@
 		04EDF3B623DA01F40062E9E2 /* SooGreyhoundsMobile */ = {
 			isa = PBXGroup;
 			children = (
+				04A2DB7223EC7DE1009E7CDD /* Photo+CoreDataClass.swift */,
+				04A2DB7323EC7DE1009E7CDD /* Photo+CoreDataProperties.swift */,
 				04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */,
-				04EDF3EB23DA0A040062E9E2 /* Photo.swift */,
 				04D64D6C23E3414D00A9F756 /* ImageStore.swift */,
 				04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */,
 				04EDF3BB23DA01F40062E9E2 /* Main.storyboard */,
@@ -124,6 +129,7 @@
 				04EDF3BE23DA01F50062E9E2 /* Assets.xcassets */,
 				04EDF3C023DA01F50062E9E2 /* LaunchScreen.storyboard */,
 				04EDF3C323DA01F50062E9E2 /* Info.plist */,
+				04A2DB6F23EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld */,
 			);
 			path = SooGreyhoundsMobile;
 			sourceTree = "<group>";
@@ -277,14 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A2DB7423EC7DE1009E7CDD /* Photo+CoreDataClass.swift in Sources */,
 				04EDF3E823DA06B10062E9E2 /* SooGreyhoundsAPI.swift in Sources */,
 				04EDF3E623DA03B40062E9E2 /* PhotosViewController.swift in Sources */,
 				04EDF3EA23DA086E0062E9E2 /* PhotoStore.swift in Sources */,
 				04D64D6D23E3414D00A9F756 /* ImageStore.swift in Sources */,
 				04D64D6923E3379900A9F756 /* PhotoDataSource.swift in Sources */,
+				04A2DB7123EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld in Sources */,
 				04D64D6B23E339CA00A9F756 /* PhotoCollectionViewCell.swift in Sources */,
+				04A2DB7523EC7DE1009E7CDD /* Photo+CoreDataProperties.swift in Sources */,
 				04EDF3B823DA01F40062E9E2 /* AppDelegate.swift in Sources */,
-				04EDF3EC23DA0A040062E9E2 /* Photo.swift in Sources */,
 				04D64D6F23E3423D00A9F756 /* PhotoInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04A2DB6F23EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04A2DB7023EC79E0009E7CDD /* SooGreyhounds.xcdatamodel */,
+			);
+			currentVersion = 04A2DB7023EC79E0009E7CDD /* SooGreyhounds.xcdatamodel */;
+			path = SooGreyhounds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 04EDF3AC23DA01F40062E9E2 /* Project object */;
 }
