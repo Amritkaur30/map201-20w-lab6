@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		04A2DB7123EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB6F23EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld */; };
 		04A2DB7423EC7DE1009E7CDD /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7223EC7DE1009E7CDD /* Photo+CoreDataClass.swift */; };
-		04A2DB7523EC7DE1009E7CDD /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7323EC7DE1009E7CDD /* Photo+CoreDataProperties.swift */; };
+		04A2DB7923F5C13F009E7CDD /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7723F5C13F009E7CDD /* Photo+CoreDataProperties.swift */; };
+		04A2DB7B23F5C1D7009E7CDD /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7A23F5C1D7009E7CDD /* TagsViewController.swift */; };
+		04A2DB7D23F5C200009E7CDD /* TagDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2DB7C23F5C200009E7CDD /* TagDataSource.swift */; };
 		04D64D6923E3379900A9F756 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6823E3379900A9F756 /* PhotoDataSource.swift */; };
 		04D64D6B23E339CA00A9F756 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */; };
 		04D64D6D23E3414D00A9F756 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D64D6C23E3414D00A9F756 /* ImageStore.swift */; };
@@ -45,7 +47,9 @@
 /* Begin PBXFileReference section */
 		04A2DB7023EC79E0009E7CDD /* SooGreyhounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SooGreyhounds.xcdatamodel; sourceTree = "<group>"; };
 		04A2DB7223EC7DE1009E7CDD /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		04A2DB7323EC7DE1009E7CDD /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04A2DB7723F5C13F009E7CDD /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04A2DB7A23F5C1D7009E7CDD /* TagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		04A2DB7C23F5C200009E7CDD /* TagDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDataSource.swift; sourceTree = "<group>"; };
 		04D64D6823E3379900A9F756 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		04D64D6A23E339CA00A9F756 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D64D6C23E3414D00A9F756 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
@@ -115,8 +119,8 @@
 		04EDF3B623DA01F40062E9E2 /* SooGreyhoundsMobile */ = {
 			isa = PBXGroup;
 			children = (
+				04A2DB7723F5C13F009E7CDD /* Photo+CoreDataProperties.swift */,
 				04A2DB7223EC7DE1009E7CDD /* Photo+CoreDataClass.swift */,
-				04A2DB7323EC7DE1009E7CDD /* Photo+CoreDataProperties.swift */,
 				04EDF3E523DA03B40062E9E2 /* PhotosViewController.swift */,
 				04D64D6C23E3414D00A9F756 /* ImageStore.swift */,
 				04EDF3B723DA01F40062E9E2 /* AppDelegate.swift */,
@@ -130,6 +134,8 @@
 				04EDF3C023DA01F50062E9E2 /* LaunchScreen.storyboard */,
 				04EDF3C323DA01F50062E9E2 /* Info.plist */,
 				04A2DB6F23EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld */,
+				04A2DB7A23F5C1D7009E7CDD /* TagsViewController.swift */,
+				04A2DB7C23F5C200009E7CDD /* TagDataSource.swift */,
 			);
 			path = SooGreyhoundsMobile;
 			sourceTree = "<group>";
@@ -284,14 +290,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A2DB7423EC7DE1009E7CDD /* Photo+CoreDataClass.swift in Sources */,
+				04A2DB7D23F5C200009E7CDD /* TagDataSource.swift in Sources */,
 				04EDF3E823DA06B10062E9E2 /* SooGreyhoundsAPI.swift in Sources */,
 				04EDF3E623DA03B40062E9E2 /* PhotosViewController.swift in Sources */,
 				04EDF3EA23DA086E0062E9E2 /* PhotoStore.swift in Sources */,
 				04D64D6D23E3414D00A9F756 /* ImageStore.swift in Sources */,
+				04A2DB7B23F5C1D7009E7CDD /* TagsViewController.swift in Sources */,
+				04A2DB7923F5C13F009E7CDD /* Photo+CoreDataProperties.swift in Sources */,
 				04D64D6923E3379900A9F756 /* PhotoDataSource.swift in Sources */,
 				04A2DB7123EC79E0009E7CDD /* SooGreyhounds.xcdatamodeld in Sources */,
 				04D64D6B23E339CA00A9F756 /* PhotoCollectionViewCell.swift in Sources */,
-				04A2DB7523EC7DE1009E7CDD /* Photo+CoreDataProperties.swift in Sources */,
 				04EDF3B823DA01F40062E9E2 /* AppDelegate.swift in Sources */,
 				04D64D6F23E3423D00A9F756 /* PhotoInfoViewController.swift in Sources */,
 			);
